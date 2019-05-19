@@ -1,0 +1,137 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build (Release)",
+            "type": "shell",
+            "promptOnClose": true,
+            "group": "build",
+            "windows": {
+                "command": "bash"
+            },
+            "linux": {
+                "command": "bash"
+            },
+            "args": [
+                "-c",
+                "'make $PWD/Program/Makefile -C Program'"
+            ],
+            "problemMatcher": [],
+            "options": {}
+        },
+        {
+            "label": "build & run (Release)",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "bash"
+            },
+            "linux": {
+                "command": "bash"
+            },
+            "args": [
+                "-c",
+                "'make -C Program && make -C Program RunRelease'"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "build & run (Debug)",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "bash"
+            },
+            "linux": {
+                "command": "bash"
+            },
+            "args": [
+                "-c",
+                "'make -C Program Debug && make -C Program RunDebug'"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean (Release)",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "bash"
+            },
+            "linux": {
+                "command": "bash"
+            },
+            "args": [
+                "-c",
+                "'make -C Program CleanRelease'"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean (Debug)",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "bash"
+            },
+            "linux": {
+                "command": "bash"
+            },
+            "args": [
+                "-c",
+                "'make -C Program CleanDebug'"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean (All)",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "bash"
+            },
+            "linux": {
+                "command": "bash"
+            },
+            "args": [
+                "-c",
+                "'make -C Program clean'"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "printEnv",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "bash"
+            },
+            "linux": {
+                "command": "bash"
+            },
+            "args": [
+                "-c",
+                "export OF_ROOT=XXX && echo OF_ROOT=$OF_ROOT"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

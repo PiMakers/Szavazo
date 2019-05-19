@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../openFrameworks/libs/**",
+                "${workspaceFolder}/../../openFrameworks/addons/**",
+                "/usr/include/**",
+                "/usr/lib/x86_64-linux-gnu/glib-2.0/include/"
+            ],
+            "defines":[
+                "VERSION=1",
+                "OF_ROOT='../../openFrameworks'"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

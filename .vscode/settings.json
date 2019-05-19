@@ -1,0 +1,16 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/obj": false
+    },
+    "terminal.integrated.shell.windows": "C:\\msys64\\usr\\bin\\bash.exe",
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING":"1",
+        "MSYSTEM":"MINGW32"
+    },
+}

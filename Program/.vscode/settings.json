@@ -1,0 +1,19 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/obj": false
+    },
+    "terminal.integrated.confirmOnExit": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.env.linux": {
+        "OF_ROOT": "../../../../",
+    },
+    "files.associations": {
+        "system_error": "cpp"
+    }
+}
